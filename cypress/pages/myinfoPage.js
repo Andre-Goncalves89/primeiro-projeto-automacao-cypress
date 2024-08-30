@@ -18,9 +18,6 @@ class MyInfoPage {
         }
         return selectors
     }
-    acessMyInfoPage() {
-        cy.get(this.selectorList().myInfoButton).click()
-    }
     typeNameField() {
         cy.get(this.selectorList().firstNameField).clear().type('First')
         cy.get(this.selectorList().lastNameField).clear().type('Last')
